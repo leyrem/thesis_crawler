@@ -10,6 +10,7 @@ type ImageCollected struct {
 	StarCount      int64
 	PullCount      int64
 	DateDownloaded time.Time
+	SubCategories  []string
 }
 
 type TagInfo struct {
@@ -71,21 +72,26 @@ type TagResponse struct {
 }*/
 
 type Results struct {
-	Name              string   `json:"name"`
-	Namespace         string   `json:"namespace"`
-	RepositoryType    string   `json:"repository_type"`
-	Status            int      `json:"status"`
-	StatusDescription string   `json:"status_description"`
-	Description       string   `json:"description"`
-	IsPrivate         bool     `json:"is_private"`
-	StarCount         int64    `json:"star_count"`
-	PullCount         int64    `json:"pull_count"`
-	LastUpdated       string   `json:"last_updated"`
-	DateRegistered    string   `json:"date_registered"`
-	Affiliation       string   `json:"affiliation"`
-	MediaTypes        []string `json:"media_types"`
-	ContentTypes      []string `json:"content_types"`
-	//Categories        []string `json:"categories"`
+	Name              string     `json:"name"`
+	Namespace         string     `json:"namespace"`
+	RepositoryType    string     `json:"repository_type"`
+	Status            int        `json:"status"`
+	StatusDescription string     `json:"status_description"`
+	Description       string     `json:"description"`
+	IsPrivate         bool       `json:"is_private"`
+	StarCount         int64      `json:"star_count"`
+	PullCount         int64      `json:"pull_count"`
+	LastUpdated       string     `json:"last_updated"`
+	DateRegistered    string     `json:"date_registered"`
+	Affiliation       string     `json:"affiliation"`
+	MediaTypes        []string   `json:"media_types"`
+	ContentTypes      []string   `json:"content_types"`
+	Categories        []Category `json:"categories"`
+}
+
+type Category struct {
+	Name string `json:"name"`
+	Slug string `json:"slug"`
 }
 
 type RepositoryImageResponse struct {
@@ -104,11 +110,11 @@ type RepositoryImageResponse struct {
 	DateRegistered    time.Time `json:"date_registered"`
 	CollaboratorCount int       `json:"collaborator_count"`
 	//Affiliation string
-	HubUser         string `json:"hub_user"`
-	HasStarred      bool   `json:"has_starred"`
-	FullDescription string `json:"full_description"`
+	HubUser         string     `json:"hub_user"`
+	HasStarred      bool       `json:"has_starred"`
+	FullDescription string     `json:"full_description"`
+	Categories      []Category `json:"categories"`
 	//Permissions ....
 	//MediaTypes ...
 	//ContentTypes ...
-	//Categories ...
 }

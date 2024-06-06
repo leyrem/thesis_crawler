@@ -35,9 +35,9 @@ func ReadFile(filePath string) ([]string, error) {
 	return lines, nil
 }
 
-func collectVerified() error {
+func collectVerified(inputFile string, outputFile string, categoryType string) error {
 
-	images, err := ReadFile("sponsored.txt")
+	images, err := ReadFile(inputFile)
 	if err != nil {
 		return err
 	}
@@ -77,12 +77,19 @@ func collectVerified() error {
 		if !strings.Contains(repoImgResp.Description, "DEPRECATED") && repoImgResp.StatusDescription == "active" {
 			fmt.Println("--> EXECUTING request: ", c)
 			c++
+
+			var subCat []string
+			for _, cat := range repoImgResp.Categories {
+				subCat = append(subCat, cat.Slug)
+			}
+
 			f := crawler.ImageCollected{
-				Name:       repoImgResp.Name,
-				Repository: repoImgResp.Namespace,
-				Category:   "Sponsored OSS",
-				StarCount:  repoImgResp.StarCount,
-				PullCount:  repoImgResp.PullCount,
+				Name:          repoImgResp.Name,
+				Repository:    repoImgResp.Namespace,
+				Category:      categoryType,
+				StarCount:     repoImgResp.StarCount,
+				PullCount:     repoImgResp.PullCount,
+				SubCategories: subCat,
 				//DateDownloaded: ,
 			}
 
@@ -101,7 +108,7 @@ func collectVerified() error {
 	fmt.Printf("There are %d deprecated images\n", deprecatedCounter)
 	fmt.Printf("There are %d inactive images\n", inactiveCounter)
 
-	if err := saveToCSV("imagesSponsored.csv", finalResults); err != nil {
+	if err := saveToCSV(outputFile, finalResults); err != nil {
 		return err
 	}
 	return nil

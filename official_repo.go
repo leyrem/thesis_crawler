@@ -45,12 +45,20 @@ func collectOfficial() error {
 		if !strings.Contains(image.Description, "DEPRECATED") && image.StatusDescription == "active" {
 			fmt.Println("--> EXECUTING request: ", c)
 			c++
+
+			// Add the category types
+			var subCat []string
+			for _, cat := range image.Categories {
+				subCat = append(subCat, cat.Slug)
+			}
+
 			f := crawler.ImageCollected{
-				Name:       image.Name,
-				Repository: "library",
-				Category:   "Official",
-				StarCount:  image.StarCount,
-				PullCount:  image.PullCount,
+				Name:          image.Name,
+				Repository:    "library",
+				Category:      "Official",
+				StarCount:     image.StarCount,
+				PullCount:     image.PullCount,
+				SubCategories: subCat,
 				//DateDownloaded: ,
 			}
 

@@ -3,9 +3,11 @@ package main
 import (
 	"crawlproject/crawler"
 	"encoding/csv"
+	"flag"
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -23,7 +25,7 @@ func saveToCSV(filePath string, data []crawler.ImageCollected) error {
 	defer writer.Flush()
 
 	// Write the header
-	header := []string{"Name", "Repository", "Category", "TagName", "TagLastPushed", "TagDigest", "TagSize", "StarCount", "PullCount", "DateDownloaded"}
+	header := []string{"Name", "Repository", "Category", "TagName", "TagLastPushed", "TagDigest", "TagSize", "StarCount", "PullCount", "DateDownloaded", "SubCategories"}
 	if err := writer.Write(header); err != nil {
 		fmt.Println("Failed to write header to file:", err)
 		panic(err)
@@ -45,6 +47,7 @@ func saveToCSV(filePath string, data []crawler.ImageCollected) error {
 				strconv.FormatInt(image.StarCount, 10),
 				strconv.FormatInt(image.PullCount, 10),
 				image.DateDownloaded.Format(time.RFC3339),
+				strings.Join(image.SubCategories, "/"),
 			}
 
 			if err := writer.Write(record); err != nil {
@@ -59,7 +62,35 @@ func saveToCSV(filePath string, data []crawler.ImageCollected) error {
 }
 
 func main() {
-	err := collectVerified()
+
+	// Define command-line flags
+	executionCategory := flag.String("category", "", "the category of images to be collected, can be one of the following: official, verified, sponsored")
+	inputImages := flag.String("path_images", "", "the path of the txt file containing the images to be collected")
+	outputFile := flag.String("output_file", "", "the path of the CSV file where the collected images will be saved")
+
+	flag.Parse()
+
+	if *executionCategory == "verified" || *executionCategory == "sponsored" {
+		if *inputImages == "" {
+			panic(fmt.Errorf("error, you must specify the flag '-path_images=' to indicate the images to collect"))
+		}
+		if *outputFile == "" {
+			panic(fmt.Errorf("error, you must specify the flag '-output_file=' to indicate the file path of the CSV file to save"))
+		}
+	}
+
+	var err error
+	switch *executionCategory {
+	case "verified":
+		err = collectVerified(*inputImages, *outputFile, "verified")
+	case "official":
+		err = collectOfficial()
+	case "sponsored":
+		err = collectVerified(*inputImages, *outputFile, "sponsored")
+	default:
+		panic(fmt.Errorf("error, you must specify the flag '-category=' with one of these values: official, verified or sponsored"))
+	}
+
 	if err != nil {
 		panic(err)
 	}
