@@ -1,10 +1,3 @@
 Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
 Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
-etcd,bitnami,verified,3.5.14,2024-06-05T01:05:43Z,sha256:bc080c833f2043540bf9fdfb6fb0aad116cf3e297f6c109e45f338e986f8507e,7967,185,124508305,0001-01-01T00:00:00Z,
 teamcity-server,jetbrains,verified,2022.04.7,2024-05-30T14:34:08Z,sha256:03be8a535d16287bb805862102647b84551733eba752f125b8fae1403e824882,2478380283,593,68841945,0001-01-01T00:00:00Z,integration-and-delivery
-grafana,bitnami,verified,10.4.3-debian-12-r0,2024-06-05T02:49:59Z,sha256:ab5ed92bda7ac808a230279756cec18aa02c1e6675866130f4190ffe5bdc6cd8,199960698,34,68608587,0001-01-01T00:00:00Z,data-science/internet-of-things/monitoring-and-observability
-postgres-exporter,bitnami,verified,0.15.0-debian-12-r32,2024-06-05T05:30:29Z,sha256:dfb001baaf3c522dbbf9974116e09649831f9bcf4e50af76f05fb6b51caf9569,50243991,13,67137140,0001-01-01T00:00:00Z,databases-and-storage/integration-and-delivery/monitoring-and-observability
-postgresql-repmgr,bitnami,verified,16.3.0-debian-12-r11,2024-06-06T12:45:58Z,sha256:48811849edbbe617a5e4340d7679e4f5093165c8e3681ef2c160f42d41998c8f,110204179,23,59411483,0001-01-01T00:00:00Z,databases-and-storage/integration-and-delivery
-fluentd,bitnami,verified,1.17.0-debian-12-r3,2024-06-06T13:59:43Z,sha256:8cfb9b5f951f7c98bfc45a01e0fca3278f0cbe59467a5d9e686b8cf0d36fb5c1,102648527,11,58577451,0001-01-01T00:00:00Z,integration-and-delivery/monitoring-and-observability/security
-kube-state-metrics,bitnami,verified,2.12.0-debian-12-r6,2024-06-05T03:54:52Z,sha256:ed9c45c15ed8d1b18356780f50b237ab865e601f27e11a87ad1827176a710a84,58419369,19,54641815,0001-01-01T00:00:00Z,monitoring-and-observability
-prometheus,bitnami,verified,2.53.0-debian-12-r0,2024-06-05T05:31:15Z,sha256:50991abe1bc468b79eedcdfbcec83cadb87b8282af0bdf6ce1a81699abe45c2d,99713161,217,52920530,0001-01-01T00:00:00Z,integration-and-delivery/monitoring-and-observability/security
