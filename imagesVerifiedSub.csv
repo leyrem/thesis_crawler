@@ -1,13 +1,5 @@
 Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
 Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
-sealed-secrets-controller,bitnami,verified,0.27.0,2024-06-05T06:08:35Z,sha256:4c8b28b877e175215ae450e82a7399dbf9a64201956622f76ee6584318f24a65,7967,8,2911312668,0001-01-01T00:00:00Z,integration-and-delivery/security
-newrelic-fluentbit-output,newrelic,verified,2.0.0,2024-05-23T16:37:43Z,sha256:de8303d7aa7f5059f33b5828909829e5a6d6d4be0c1ed251704f49e67d03c56d,2127815745,3,1025229102,0001-01-01T00:00:00Z,
-newrelic-fluentbit-output,newrelic,verified,1.19.0,2024-05-23T16:34:48Z,sha256:e6666a0b5e20167d9a5361d86af038c52f9731379055bcca542d92d9611232e8,2194839492,3,1025229102,0001-01-01T00:00:00Z,
-dynatrace-operator,dynatrace,verified,v1.1.0,2024-06-06T14:16:25Z,sha256:fb69bd756ad2be7986075c40f4e0fbfffcb18de44bda938323a39aa2884f6959,491296,2,987586104,0001-01-01T00:00:00Z,integration-and-delivery/monitoring-and-observability/networking
-dynatrace-operator,dynatrace,verified,v1.0.1,2024-06-06T14:17:21Z,sha256:d9b1b88722f26415a807f6a15994079e671dbfab2f6871269213931fd59be23d,60921,2,987586104,0001-01-01T00:00:00Z,integration-and-delivery/monitoring-and-observability/networking
-agent,grafana,verified,main,2024-06-06T10:16:11Z,sha256:f15d97e4fe8043427b1f3b8790d6b4299b5b61cfdbb308b1d67c3d64ea33d56b,218537943,22,376133531,0001-01-01T00:00:00Z,
-agent,grafana,verified,main-1a6ef52,2024-06-06T10:16:11Z,sha256:f15d97e4fe8043427b1f3b8790d6b4299b5b61cfdbb308b1d67c3d64ea33d56b,218537943,22,376133531,0001-01-01T00:00:00Z,
-shell,rancher,verified,v0.2.1-rc.5,2024-05-29T15:21:18Z,sha256:96857d98f49be7576711b503d86e14095bf2d8b868c44aa6c6b4d2a0f6d8ba75,135448803,0,123849781,0001-01-01T00:00:00Z,
-infrastructure,newrelic,verified,1.53.0,2024-05-15T07:55:02Z,sha256:f15658b7ee599bbbacb740a5a90d9ca6b245002a95903ccb512a7b5c9d380406,68973081,25,92932905,0001-01-01T00:00:00Z,
-rke-tools,rancher,verified,v0.1.96,2024-06-06T05:15:41Z,sha256:e525201a5eff55215098d06e775c00f5ba2020249bba54600650446142687139,126455619,12,87666758,0001-01-01T00:00:00Z,
-system-agent-installer-rke2,rancher,verified,v1.28.11-rc6-rke2r1,2024-05-22T23:20:27Z,sha256:a05a577a0cc2120f4fe56922a4ef191092f90be6bd3335dd0a918d2b3423c7a8,204523234,3,67731297,0001-01-01T00:00:00Z,
+teamcity-server,jetbrains,verified,2024.03.3-linux,2024-05-30T14:34:08Z,sha256:2a33b0f79400ca4663d77578e3cad6b0fc9e8bc1203aa5c385fbbd031199d761,2478380283,593,68841945,0001-01-01T00:00:00Z,integration-and-delivery
+teamcity-server,jetbrains,verified,2023.11.5-linux,2024-05-30T14:18:28Z,sha256:b7b937c991cb6c8354f5ddf08ac729e471086eb5833ea0b7a6d3c26a166038e9,2527935744,593,68841945,0001-01-01T00:00:00Z,integration-and-delivery
+teamcity-server,jetbrains,verified,2022.04.7-linux,2024-05-30T13:07:31Z,sha256:f955351eeedf189abe40e9592cfa7ee2a0e04242a1ce3388356f262fd9a855a4,2371551188,593,68841945,0001-01-01T00:00:00Z,integration-and-delivery
