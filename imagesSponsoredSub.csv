@@ -1,5 +1,8 @@
 Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
 Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
-jnlp-agent-maven,jenkins,sponsored,latest,2024-06-06T09:26:12Z,sha256:fc9680ceeb6eb1213e8e14e564ea574cde207a69813c49275365548af1cdb109,2433946172,9,119380274,0001-01-01T00:00:00Z,languages-and-frameworks/integration-and-delivery
-serving,tensorflow,sponsored,2.16.1-gpu,2024-06-06T10:08:06Z,sha256:937abe6bd8a24609b09f75a2f128aef501c973a856d334023c0fa26e33930cec,12589735060,138,76028363,0001-01-01T00:00:00Z,api-management/integration-and-delivery/machine-learning-and-ai
-falco,falcosecurity,sponsored,0.38.1,2024-05-30T08:47:57Z,sha256:d08494d6d5656bfa1ea4a26f20c77cbeaf7badd073fafdecb800d546464f048f,251,16,46824437,0001-01-01T00:00:00Z,
+verdaccio,verdaccio,sponsored,6.x-next,2024-06-06T00:18:22Z,sha256:86bcfc687677008b99a96eb81fef4519af736928b348dc88fb7fae6cda746b94,197668643,193,209633280,0001-01-01T00:00:00Z,
+serving,tensorflow,sponsored,2.16.1-gpu,2024-06-06T10:08:06Z,sha256:dd0631f62427190fafa5b53bb523f7d000a54381757fd0fcded24a150cbaa738,12589735060,138,76028363,0001-01-01T00:00:00Z,api-management/integration-and-delivery/machine-learning-and-ai
+all-spark-notebook,jupyter,sponsored,x86_64-notebook-7.0.6,2023-10-20T20:05:10Z,sha256:ce0b40fb82863bef7fad974b94034819d565db81ede69cb9cf39cffaaeeb503a,2150179520,435,74501327,0001-01-01T00:00:00Z,data-science/languages-and-frameworks/machine-learning-and-ai
+all-spark-notebook,jupyter,sponsored,x86_64-lab-4.0.7,2023-10-20T20:05:10Z,sha256:ce0b40fb82863bef7fad974b94034819d565db81ede69cb9cf39cffaaeeb503a,2150179520,435,74501327,0001-01-01T00:00:00Z,data-science/languages-and-frameworks/machine-learning-and-ai
+falco,falcosecurity,sponsored,0.38.1,2024-05-30T08:47:57Z,sha256:e79e3f263abb80b62f8a2c432c02d8f88456e9391dc0690808fc634ef7b4f3c1,251,16,46824437,0001-01-01T00:00:00Z,
+photoprism,photoprism,sponsored,240531-ce,2024-06-03T14:06:31Z,sha256:75e225b492aabd1fce1a6d9b08977340a77dcb63731ee16f1eef22d3267c3115,660489887,371,44324507,0001-01-01T00:00:00Z,content-management-system/machine-learning-and-ai/web-servers
