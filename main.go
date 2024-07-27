@@ -1,7 +1,6 @@
 package main
 
 import (
-	"crawlproject/crawler"
 	"encoding/csv"
 	"flag"
 	"fmt"
@@ -9,6 +8,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/leyrem/thesis_crawler/crawler"
 )
 
 func saveToCSV(filePath string, data []crawler.ImageCollected) error {

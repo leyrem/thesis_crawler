@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"crawlproject/crawler"
+	"github.com/leyrem/thesis_crawler/crawler"
 )
 
 func ReadFile(filePath string) ([]string, error) {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"crawlproject/crawler"
+	"github.com/leyrem/thesis_crawler/crawler"
 )
 
 func collectOfficial() error {
