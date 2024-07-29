@@ -1,5 +1,0 @@
-Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
-Name,Repository,Category,TagName,TagLastPushed,TagDigest,TagSize,StarCount,PullCount,DateDownloaded,SubCategories
-teamcity-server,jetbrains,verified,2024.03.3-linux,2024-05-30T14:34:08Z,sha256:2a33b0f79400ca4663d77578e3cad6b0fc9e8bc1203aa5c385fbbd031199d761,2478380283,593,68841945,0001-01-01T00:00:00Z,integration-and-delivery
-teamcity-server,jetbrains,verified,2023.11.5-linux,2024-05-30T14:18:28Z,sha256:b7b937c991cb6c8354f5ddf08ac729e471086eb5833ea0b7a6d3c26a166038e9,2527935744,593,68841945,0001-01-01T00:00:00Z,integration-and-delivery
-teamcity-server,jetbrains,verified,2022.04.7-linux,2024-05-30T13:07:31Z,sha256:f955351eeedf189abe40e9592cfa7ee2a0e04242a1ce3388356f262fd9a855a4,2371551188,593,68841945,0001-01-01T00:00:00Z,integration-and-delivery
